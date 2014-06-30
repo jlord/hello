@@ -1,0 +1,62 @@
+/* Stylez */
+body {font-family: Quicksand, Merriweather; margin: 0 auto; background: #efefef; line-height: 1.4em; padding: 12px;}
+.wrapper {box-sizing: border-box; background: #fff; box-shadow: 0 0 5px #888; box-shadow: 0 0 5px #888; padding: 0px 40px; min-height: 100%; overflow: auto; }
+
+
+a {color: #777; text-decoration: none;}
+a:hover {border-bottom: 1px solid #CCFF26; color: #222}
+
+h4 {font-family: Quicksand, Source Sans Pro, "Helvetica Neue", "Arial", sans-serif; font-weight: 700;}
+p {font-weight: 400;}
+
+article {padding: 8px 0;}
+section {padding-top: 24px;}
+
+.container {width: 600px; margin: 0 auto; padding: 60px 20px;}
+.meta {text-transform: uppercase; font-family: Quicksand, "Helvetica Neue", "Arial", sans-serif; font-size: 11px; letter-spacing: .15em;}
+.meta a:hover {border-bottom: 1px solid #CCFF26; color: #222;}
+.inline-list {list-style: none; margin: 0; padding: 0;}
+.inline-list li {display: inline-block;}
+.load {font-family: Quicksand, Source Sans Pro, "Helvetica Neue", "Arial", sans-serif; color: #CCFF26; font-weight: 900; border: 1px dashed #CCFF26; padding: 3px 4px; border-radius: 2px; opacity: .5;}
+.name {font-family: Quicksand, "Ceviche One"; font-size: 60px;}
+.tleft {text-align: left;}
+.half {min-width: 270px; max-width: 320px; vertical-align: top; display: inline-block;}
+.right {float: right;}
+
+/* Twitter */
+#tweet p {font-size: 12px;}
+
+/* Instagrams */
+#instagram {margin: 0 auto;}
+.one-gram {display: inline;}
+.one-gram img {border: 5px solid #fafafa;}
+
+
+/*!
+Animate.css - http://daneden.me/animate
+Licensed under the MIT license
+*/
+
+.animated {-webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-fill-mode: both; animation-fill-mode: both;}
+
+@-webkit-keyframes flash {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+
+  25%, 75% {
+    opacity: 0;
+  }
+}
+
+@keyframes flash {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+
+  25%, 75% {
+    opacity: 0;
+  }
+}
+
+.flash {-webkit-animation-name: flash; animation-name: flash;}
