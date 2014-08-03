@@ -12,6 +12,10 @@ See the demo at [jlord.github.io/hello](http://jlord.github.io/hello).
 
 ## Create your own
 
+| You'll Need: |   |
+| ------------ | - |
+| [GitHub](http://www.github.com/signup) account | Basic [HTML](http://learn.shayhowe.com/html-css/) |
+
 ### First, fork this repository.
 
 Click the fork button in the upper right. Now you have a copy of this repository on your GitHub account!
