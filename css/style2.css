@@ -1,4 +1,4 @@
-body {font-family: Montserrat, Helvetica Neue, sans-serif; margin: 0 auto; line-height: 2em; padding: 12px; box-sizing: border-box; color: #333; overflow: auto;
+body {font-family: 'Raleway', sans-serif; margin: 0 auto; line-height: 2em; padding: 12px; box-sizing: border-box; color: #333; overflow: auto;
 background: #ffded1; /* Old browsers */
 background: -moz-linear-gradient(-45deg,  #ffded1 0%, #ffded1 50%, #ffc5af 50%, #ffc5af 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#ffded1), color-stop(50%,#ffded1), color-stop(50%,#ffc5af), color-stop(100%,#ffc5af)); /* Chrome,Safari4+ */
@@ -41,12 +41,19 @@ article::after {
 }
 hr {border-bottom: 3px solid #0068FF;}
 
-.meta {text-transform: uppercase; font-family: Arial, Courier New, Source Sans Pro, sans-serif; font-size: 10px; letter-spacing: .15em;}
+.meta {text-transform: uppercase; font-family: Arial, Courier New, Source Sans Pro, sans-serif; font-size: 40px; letter-spacing: .15em;}
 .meta a:hover {color: #333;}
 
-.inline-list {list-style: none; margin: 0; padding: 0;}
+.inline-list {list-style: none; margin: 0; padding: 0; color:red;}
 .inline-list li {display: inline-block;}
 
 footer .inline-list li {margin-right: 40px;}
 footer a {border: none; color: #0068FF;}
 footer {margin: 0 auto; position: absolute; bottom: 55%; right: -255px; padding: 40px 0 0 0; width: 600px; -webkit-transform: rotate(-90deg);}
+#link1 a{
+  color: red;
+  text-decoration:none;
+}
+#link2 a{
+  color:blue;
+}
