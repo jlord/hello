@@ -16,7 +16,7 @@ p {font-weight: 200; font-size: 20px;}
 .meta {text-transform: uppercase; font-family: Courier New, Quicksand, "Helvetica Neue", "Arial", sans-serif; font-size: 40px; letter-spacing: .15em;}
 .meta a:hover {border-bottom: 1px solid #CCFF26; color: #333;}
 
-.inline-list {list-style: none; margin: 0; padding: 0;}
+.inline-list {list-style: none; margin: 0; padding: 0; color:red;}
 .inline-list li {display: inline-block;}
 
 footer .inline-list li {padding-right: 40px;}
