@@ -21,12 +21,16 @@ p {font-weight: 200; font-size: 20px;}
 
 footer .inline-list li {padding-right: 40px;}
 footer {margin: 0 auto; position: absolute; bottom: 0px; padding: 40px 0; width: 600px;}
-#link{
+
+#link1 a{
   color:red;
+  text-decoration:none;
 }
-#link2{
+#link2 a{
   color: green;
+  text-decoration:none;
 }
-#link3{
+#link3 a{
   color: blue;
+  text-decoration:none;
 }
