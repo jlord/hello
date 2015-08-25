@@ -13,7 +13,7 @@ p {font-weight: 200; font-size: 20px;}
 
 .container {margin: 0 auto; width: 600px; height: 400px; padding: 80px 12px; overflow: auto;}
 
-.meta {text-transform: uppercase; font-family: Courier New, Quicksand, "Helvetica Neue", "Arial", sans-serif; font-size: 11px; letter-spacing: .15em;}
+.meta {text-transform: uppercase; font-family: Courier New, Quicksand, "Helvetica Neue", "Arial", sans-serif; font-size: 40px; letter-spacing: .15em;}
 .meta a:hover {border-bottom: 1px solid #CCFF26; color: #333;}
 
 .inline-list {list-style: none; margin: 0; padding: 0;}
