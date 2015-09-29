@@ -6,7 +6,7 @@
 
 A so very simple personal site.
 
-This is a [Fork-n-Go](http://www.jlord.github.io/forkngo) project, so fork to get started making your own.
+This is a [Fork-n-Go](http://jlord.github.io/forkngo) project, so fork to get started making your own.
 
 See the demo at [jlord.github.io/hello](http://jlord.github.io/hello).
 
@@ -15,7 +15,7 @@ See the demo at [jlord.github.io/hello](http://jlord.github.io/hello).
 
 | You'll Need:                                   | ☟                                                 |
 | -----------------------------------------------| ------------------------------------------------- |
-| [GitHub](http://www.github.com/signup) account | Basic [HTML](http://learn.shayhowe.com/html-css/) |
+| [GitHub](http://www.github.com/join) account | Basic [HTML](http://learn.shayhowe.com/html-css/) |
 
 
 ### First, fork this repository.
