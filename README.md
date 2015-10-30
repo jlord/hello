@@ -45,7 +45,7 @@ There are basic styles included in `style.css` but go wild and make it your own,
 
 ![2](screenshot2.png)
 
-There is another style option included within this repository. If you change the CSS file specified on **line 7** in `index.html` to:
+There is another style option included within this repository, if you change the CSS file specified on **line 7** in `index.html` to:
 
 ```HTML
 <link rel="stylesheet" type="text/css" href="css/style.css"
