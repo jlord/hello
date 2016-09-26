@@ -21,3 +21,17 @@ p {font-weight: 200; font-size: 20px;}
 
 footer .inline-list li {padding-right: 40px;}
 footer {margin: 0 auto; position: absolute; bottom: 0px; padding: 40px 0; width: 600px;}
+
+.yourimage{
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  overflow: hidden;
+}
+.yourimage img{
+   width: 200px;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
