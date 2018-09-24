@@ -23,7 +23,8 @@ p {font-weight: 200; font-size: 20px;}
 
 .container {margin: 0 auto; width: 700px; padding: 120px 12px 50px; overflow: auto;}
 article {padding: 60px;}
-article::before {
+/* TODO find better cross-platform characters */
+/* article::before {
   content: '\2601';
   position: relative;
   top: 0;
@@ -38,7 +39,7 @@ article::after {
   left: 300px;
   color: #0068FF;
   font-size: 44px;
-}
+} */
 hr {border-bottom: 3px solid #0068FF;}
 
 .meta {text-transform: uppercase; font-family: Arial, Courier New, Source Sans Pro, sans-serif; font-size: 10px; letter-spacing: .15em;}
