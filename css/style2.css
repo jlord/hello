@@ -23,14 +23,7 @@ p {font-weight: 200; font-size: 20px;}
 
 .container {margin: 0 auto; width: 700px; padding: 120px 12px 50px; overflow: auto;}
 article {padding: 60px;}
-article::before {
-  content: '\2601';
-  position: relative;
-  top: 0;
-  left: -30px;
-  color: #0068FF;
-  font-size: 24px;
-}
+
 article::after {
   content: '\2A55\2A55\2A55\2A55';
   position: relative;
