@@ -24,7 +24,7 @@ Click the fork button in the upper right. Now you have a copy of this repository
 
 ### Rename your fork
 
-Once you've forked it, click on Settings and rename your fork, because probably `hello` is not what you want in your URL. Name your new repository: `username.github.io` (but make `username` your username, for instance, I'd use `jlord.github.io`). GitHub will host all website files on the `master` branch of a repo with that account name convention. Woo! More info on that at [pages.github.com](http://www.pages.github.com).
+Once you've forked it, click on Settings and rename your fork, because probably `hello` is not what you want in your URL. Name your new repository: `username.github.io` (but make `username` your username, for instance, I'd use `jlord.github.io`). GitHub will host all website files on the `master` branch of a repo with that account name convention. Woo! More info on that at [pages.github.com](http://pages.github.com).
 
 You can also give it any 'ol name and GitHub will host it using this pattern: `username.github.io/reponame`. Or you can keep it named `hello` and find it at: `username.github.io/hello`.
 
