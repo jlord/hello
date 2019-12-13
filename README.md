@@ -1,4 +1,4 @@
-# Hello Page
+# Hello Page for everybody
 
 <img src="https://raw.githubusercontent.com/jlord/forkngo/gh-pages/badges/cobalt.png" width="200">
 
