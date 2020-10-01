@@ -16,12 +16,10 @@ body{
 
 .wrapper 
 	{
-		box-sizing: border-box;
-		background: #fff;
-		box-shadow: 0 0 5px #888;
-		box-shadow: 0 0 5px #888;
-		height: 100%;
-		overflow: auto; 
+	box-sizing: border-box;
+	background: #fff;box-shadow: 0 0 5px #888;box-shadow: 0 0 5px #888;
+	height: 100%;
+	overflow: auto;
 }
 
 
@@ -31,10 +29,9 @@ a {
 	border-bottom: 1px solid #CCFF26;
   }
 
-a:hover 
-{
+a:hover {
 	border-bottom: 1px solid #CCFF26;
-	color: #222
+	color: #222;
 }
 
 p{
@@ -43,9 +40,10 @@ p{
  }
 
 .name {
-		font-family: Playfair Display;
-		font-size: 50px; font-weight: 900;
-		padding-bottom: 20px;
+	font-family: Playfair Display;
+	font-size: 50px;
+	font-weight: 900;
+	padding-bottom: 20px;
 }
 
 .container {
