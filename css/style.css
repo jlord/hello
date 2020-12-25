@@ -1,33 +1,48 @@
 body{
+  display:relative;
   width:100%;
   padding:0;
   margin:0;
   font-family:"Montserrat";
 }
+p{
+  margin:0;
+}
 .ana-alan{
-  width:700px;
-  height:auto;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width:70%;
   background-color:red;
-  margin:0 auto;
   padding:2%;
+  display:grid;
 }
 .ust-alan{
   width:100%;
   display:grid;
-  grid-template-columns:1fr 5fr;
-  grid-template-rows:auto;
-  grid-template-areas:
-  "sol-alan sag-alan sag-alan sag-alan sag-alan sag-alan";
+}
+.ust-sol-alan{
+  grid-column:0/2;
+  grid-row:0/2;
+}
+.ust-sag-alan{
+  grid-column:2/10;
+  grid-row:0/2;
 }
 .gorsel-isim-alan{
-  grid-area:sol-alan;
+  grid-column:0/2;
+  grid-row:0/2;
 }
 .isim-alan{
   text-align:center;
 }
 .aciklama-alan{
   padding-left:5%;
-  grid-area:sag-alan;
+  grid-column:2/10;
+  grid-row:0/2;
 }
 .gorsel-alan{
   width:150px;
@@ -35,17 +50,13 @@ body{
   border-radius:50%;
   background-color:purple;
 }
-.alt-alan{
-  width:100%;
-  display:grid;
-  grid-template-columns:1fr 5fr;
-  grid-template-rows:auto;
-  grid-template-areas:
-  "sol-alan sag-alan sag-alan sag-alan sag-alan sag-alan";
+.alt-sol-alan{
+  margin-top:20%;
+  grid-column:0/2;
+  grid-row:2/6;
 }
 .alt-sag-alan{
-  grid-area:sag-alan;
-}
-.alt-sol-alan{
-  grid-area:sol-alan;
+  padding-left:5%;
+  grid-column:2/10;
+  grid-row:2/6;
 }
