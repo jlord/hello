@@ -2,6 +2,7 @@ body{
   width:100%;
   padding:0;
   margin:0;
+  font-family:"Montserrat";
 }
 .ana-alan{
   width:700px;
@@ -33,4 +34,18 @@ body{
   height:150px;
   border-radius:50%;
   background-color:purple;
+}
+.alt-alan{
+  width:100%;
+  display:grid;
+  grid-template-columns:1fr 5fr;
+  grid-template-rows:auto;
+  grid-template-areas:
+  "sol-alan sag-alan sag-alan sag-alan sag-alan sag-alan";
+}
+.alt-sag-alan{
+  grid-area:sag-alan;
+}
+.alt-sol-alan{
+  grid-area:sol-alan;
 }
