@@ -4,9 +4,16 @@ body{
   padding:0;
   margin:0;
   font-family:"Montserrat";
+  background-color:#FF0000;
 }
 p{
   margin:0;
+}
+h2{
+  color:#281a59;
+}
+hr{
+  background-color:#c2d82e;
 }
 .ana-alan{
   margin: 0;
@@ -15,8 +22,9 @@ p{
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  border-radius:50px;
   width:70%;
-  background-color:red;
+  background:linear-gradient(223.88deg, #c9c8ce 10.31%,#848484 70%, #c9c8ce 94.31%);
   padding:2%;
   display:grid;
 }
@@ -48,6 +56,7 @@ p{
   width:150px;
   height:150px;
   border-radius:50%;
+  margin:0 auto;
   background-color:purple;
 }
 .alt-sol-alan{
