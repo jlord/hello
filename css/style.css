@@ -26,5 +26,7 @@ p {font-weight: 200; font-size: 20px;}
 .fa-github { background: #000000 }
 .fa-envelope { background: #000000; color: white;}
 
+h1,h2,.large,.left{font-family:"Century Gothic","Lucida Grande",Arial,sans-serif;font-size:40px}
+
 footer .inline-list li {padding-right: 40px;}
 footer {margin: 0 auto; position: absolute; bottom: 0px; padding: 40px 0; width: 600px;}
