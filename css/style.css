@@ -1,7 +1,7 @@
 /* Stylez */
 # header {background-image: url("cool.png")}
  
-body { font-family: Franklin Gothic Book, Source Sans Pro, Helvetica Neue, sans-serif; margin: 0 auto; background: #efefef; line-height: 1.8em; padding: 12px; box-sizing: border-box; color: #333;}
+body { font-family: Century Gothic, Lucida Grande, Arial, sans-serif; font-size:40px; margin: 0 auto; background: #efefef; line-height: 1.8em; padding: 12px; box-sizing: border-box; color: #333;}
 body, html {height: 100% ;}
 
 .wrapper {box-sizing: border-box; background: #fff; box-shadow: 0 0 5px #888; box-shadow: 0 0 5px #888; height: 100%; overflow: auto; }
@@ -25,11 +25,6 @@ p {font-weight: 200; font-size: 20px;}
 .fa-linkedin { background: #007bb5; color: white;}
 .fa-github { background: #000000 }
 .fa-envelope { background: #000000; color: white;}
-
-h1,h2,.large,.left{font-family:"Century Gothic","Lucida Grande",Arial,sans-serif;font-size:40px}
-.large{text-align:right;top:20%;right:120px;font-size:13px}
-.left{text-align:left;right:auto;left:180px;font-size:13px}
-.large h2{font-size:60px}
 
 footer .inline-list li {padding-right: 40px;}
 footer {margin: 0 auto; position: absolute; bottom: 0px; padding: 40px 0; width: 600px;}
