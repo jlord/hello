@@ -20,7 +20,7 @@ p {font-weight: 200; font-size: 20px;}
 .inline-list {list-style: none; margin: 0; padding: 0;}
 .inline-list li {display: inline-block;}
 
-.fa { padding: 10px; font-size: 15px; width: 10px; text-align: center; text-decoration: none; border-radius: 50%; }
+.fa { padding: 20px; font-size: 30px; width: 30px; text-align: center; text-decoration: none; border-radius: 50%; }
 .fa:hover { opacity: 0.7;}
 .fa-linkedin { background: #007bb5; color: white;}
 .fa-github { background: #000000 }
