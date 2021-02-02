@@ -23,6 +23,7 @@ p {font-weight: 200; font-size: 20px;}
 .fa { padding: 20px; font-size: 30px; width: 30px; text-align: center; text-decoration: none; margin: 5px 2px; border-radius: 50%; }
 .fa:hover { opacity: 0.7;}
 .fa-linkedin { background: #007bb5; color: white;}
+.fa-github 
 
 footer .inline-list li {padding-right: 40px;}
 footer {margin: 0 auto; position: absolute; bottom: 0px; padding: 40px 0; width: 600px;}
