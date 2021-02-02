@@ -7,7 +7,7 @@ background: url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280
 
 body, html {height: 100% ;}
 
-.wrapper {box-sizing: border-box; background: #fff; box-shadow: 0 0 5px #888; box-shadow: 0 0 5px #888; height: 100%; overflow: auto; }
+/*.wrapper {box-sizing: border-box; background: #fff; box-shadow: 0 0 5px #888; box-shadow: 0 0 5px #888; height: 100%; overflow: auto; }*/
 
 a {color: #777; text-decoration: none; border-bottom: 1px solid #CCFF26;}
 a:hover {border-bottom: 1px solid #CCFF26; color: #222}
@@ -15,7 +15,7 @@ p {font-weight: 200; font-size: 20px;}
 
 .name {font-family: Playfair Display; font-size: 50px; font-weight: 900; padding-bottom: 20px;}
 
-.container {margin: 0 auto; width: 600px; height: 400px; padding: 80px 12px; overflow: auto;}
+/*.container {margin: 0 auto; width: 600px; height: 400px; padding: 80px 12px; overflow: auto;}*/
 
 .meta {text-transform: uppercase; font-family: Courier New, Quicksand, "Helvetica Neue", "Arial", sans-serif; font-size: 11px; letter-spacing: .15em;}
 .meta a:hover {border-bottom: 1px solid #CCFF26; color: #333;}
