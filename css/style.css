@@ -1,5 +1,4 @@
 /* Styles */
-/*font-family: Franklin Gothic Book, Source Sans Pro, Helvetica Neue, sans-serif; */
 body { font-family: Lucida Grande, sans-serif; margin: 0 auto; line-height: 1.8em; padding: 12px; box-sizing: border-box; color: #fff; overflow: auto;
   background: url(./background.png) no-repeat center center fixed ; /*background image*/
   background-size: cover;
@@ -12,37 +11,24 @@ a { color: #fff; text-decoration: none; border-bottom: 1px solid #CCFF26;}
 a:hover { border-bottom: 1px solid #CCFF26; color: #222;}	
 p { font-weight: 200; font-size: 20px;}
 
-/*.name { font-family: Playfair Display; font-size: 50px; font-weight: 900; padding-bottom: 20px;}*/
 .name { font-family: Lucida Grande, sans-serif; font-size: 50px; font-weight: 900; padding-bottom: 10px;}	
 
-/*.container { margin: 0 auto; padding: 80px 12px 0px 50px; overflow: auto;}	*/
 .container { margin: 0 auto; padding: 100px 12px 0px 300px; overflow: auto;}	
 
-/*.meta {text-transform: uppercase; font-family: Courier New, Quicksand, "Helvetica Neue", "Arial", sans-serif; font-size: 11px; letter-spacing: .15em;}	*/
 .meta {text-transform: uppercase; font-family: Lucida Grande, sans-serif; font-size: 11px; letter-spacing: .15em;}
 .meta a:hover {border-bottom: 1px solid #CCFF26; color: #fff;}	
 
 .inline-list {list-style: none; margin: 0; padding: 0;}	
 .inline-list li {display: inline-block;}	
 
-/* Icon rendered at bottom of page */
+/* Icons */
 .fa { padding: 15px; font-size: 30px; width: 30px; text-align: center; text-decoration: none; border-radius: 50%; }	
 .fa:hover { opacity: 0.7;}	
 .fa-linkedin { background: #007bb5; color: white;}	
 .fa-github { background: #000000;}	
 .fa-envelope { background: #000000; color: white; }	
 
-/* Icon rendered at bottom of page 
-.fa { background: #66ffdc; float: right; font-size: 1.2em}	
-.fa:hover { color: #fff; border-radius: 50%; box-shadow: 0px 0px 5px #000;}	
-.fa-linkedin { background: #007bb5; color: white;}	
-.fa-github { background: #000000;}	
-.fa-envelope { background: #000000; color: white; }	*/
-
-/* Icon text box */
+/* Icon Text Box */
 footer .inline-list li {padding-right: 40px; padding-top: 10px; padding-bottom:10px; }	
 footer { position:absolute; bottom:20px; left:0px; width:100%; color:#000; background:#fff; opacity: 0.5; text-align: right;}
 
-/*footer {margin: 0 auto; position: absolute; bottom: 0px; padding: 40px 0; width: 600px; background:#000}*/	
-/*menu{position:absolute;bottom:20px;left:141px;z-index:80;width:100%;line-height:12px}
-#menu div{height:56px;background:#000;opacity:0.6;filter:alpha(opacity=60);padding:7px 0 0 7px}*/
