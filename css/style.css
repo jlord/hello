@@ -5,6 +5,7 @@ background-image: url("../images/979162.png"); /*background image*/
 
 }
 
+/*
 body, html {height: 100% ;}
 
 /*.wrapper {box-sizing: border-box; background: #fff; box-shadow: 0 0 5px #888; box-shadow: 0 0 5px #888; height: 100%; overflow: auto; }*/
@@ -31,3 +32,4 @@ p {font-weight: 200; font-size: 20px;}
 
 footer .inline-list li {padding-right: 40px;}
 footer {margin: 0 auto; position: absolute; bottom: 0px; padding: 40px 0; width: 600px;}
+*/
