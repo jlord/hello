@@ -5,7 +5,7 @@ margin: 0 auto;
 line-height: 1.8em; 
 padding: 12px; 
 box-sizing: border-box; 
-color: #333; 
+color: #fff; 
 overflow: auto;
 background: url(./background.png) no-repeat center center fixed ; /*background image*/
 background-size: cover;
