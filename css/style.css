@@ -7,14 +7,23 @@ padding: 12px;
 box-sizing: border-box; 
 color: #fff; 
 overflow: auto;
-background: url(./background.png) no-repeat center center fixed ; /*background image*/
-background-size: cover;
+/*background: url(./background.png) no-repeat center center fixed ; /*background image*/
+/*background-size: cover;*/
 
 }
 
 body, html {height: 100% ;}
 
-.wrapper {box-sizing: border-box; background: #fff; box-shadow: 0 0 5px #888; box-shadow: 0 0 5px #888; height: 100%; overflow: auto; }
+.wrapper { 
+  box-sizing: border-box; 
+  background: #fff; 
+  box-shadow: 0 0 5px #888; 
+  box-shadow: 0 0 5px #888; 
+  height: 100%; 
+  overflow: auto; 
+  background: url(./background.png) no-repeat center center fixed ; /*background image*/
+  background-size: cover;
+}
 
 a {color: #fff; text-decoration: none; border-bottom: 1px solid #CCFF26;}	
 a:hover {border-bottom: 1px solid #CCFF26; color: #222}	
