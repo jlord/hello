@@ -32,7 +32,8 @@ p { font-weight: 200; font-size: 20px;}
 .fa-github { background: #000000; opacity: 1}	
 .fa-envelope { background: #000000; color: white; opacity: 1}	
 
-footer .inline-list li {padding-right: 40px;}	
+/* Icon text box */
+footer .inline-list li {padding-right: 40px; padding-top: 10px; padding-bottom:10px; }	
 footer { position:absolute; bottom:20px; left:0px; width:100%; color:#fff; background:#000; opacity: 0.5; text-align: right;}
 
 /*footer {margin: 0 auto; position: absolute; bottom: 0px; padding: 40px 0; width: 600px; background:#000}*/	
