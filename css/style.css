@@ -7,12 +7,14 @@ padding: 12px;
 box-sizing: border-box; 
 color: #fff; 
 overflow: auto;
-/*background: url(./background.png) no-repeat center center fixed ; /*background image*/
-/*background-size: cover;*/
+background: url(./background.png) no-repeat center center fixed ; /*background image*/
+background-size: cover;
 
 }
 
-body, html {height: 100% ;}
+body, html {
+  height: 100% ;
+}
 
 .wrapper { 
   box-sizing: border-box; 
@@ -21,16 +23,38 @@ body, html {height: 100% ;}
   box-shadow: 0 0 5px #888; 
   height: 100%; 
   overflow: auto; 
-  background: url(./background.png) no-repeat center center fixed ; /*background image*/
-  background-size: cover;
 }
 
-a {color: #fff; text-decoration: none; border-bottom: 1px solid #CCFF26;}	
-a:hover {border-bottom: 1px solid #CCFF26; color: #222}	
-p {font-weight: 200; font-size: 20px;}
+a {
+  color: #fff; 
+  text-decoration: none; 
+  border-bottom: 1px solid #CCFF26;
+}	
 
-.name {font-family: Playfair Display; font-size: 50px; font-weight: 900; padding-bottom: 20px;}	
-.container {margin: 0 auto; width: 600px; height: 400px; padding: 80px 12px; overflow: auto;}	
+a:hover {
+  border-bottom: 1px solid #CCFF26; 
+  color: #222
+}	
+
+p {
+  font-weight: 200; 
+  font-size: 20px;
+}
+
+.name {
+  font-family: Playfair Display; 
+  font-size: 50px; 
+  font-weight: 900; 
+  padding-bottom: 20px;
+}	
+
+.container {
+  margin: 0 auto; 
+  /*width: 600px; 
+  height: 400px; */
+  padding: 80px 12px; 
+  overflow: auto;
+}	
 
 .meta {text-transform: uppercase; font-family: Courier New, Quicksand, "Helvetica Neue", "Arial", sans-serif; font-size: 11px; letter-spacing: .15em;}	
 .meta a:hover {border-bottom: 1px solid #CCFF26; color: #fff;}	
