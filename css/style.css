@@ -1,8 +1,7 @@
 /* Styles */
 body { font-family: Franklin Gothic Book, Source Sans Pro, Helvetica Neue, sans-serif; margin: 0 auto; line-height: 1.8em; padding: 12px; box-sizing: border-box; color: #fff; overflow: auto;
-background: url(./background.png) no-repeat center center fixed ; /*background image*/
-background-size: cover;
-
+  background: url(./background.png) no-repeat center center fixed ; /*background image*/
+  background-size: cover;
 }
 body, html { height: 100% ;}
 
