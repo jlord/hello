@@ -22,10 +22,10 @@ p { font-weight: 200; font-size: 20px;}
 /* Icons */
 .fa { padding: 15px; font-size: 30px; width: 30px; text-align: center; text-decoration: none; border-radius: 50%; }	
 .fa:hover { opacity: 0.7;}	
-.fa-blue { background: #007bb5;}
+.fa-blue { background: #007bb5; color: white;}
  /*.fa-linkedin { background: #007bb5; color: white;}	*/
 
-.fa-black { background: #000000;}	
+.fa-black { background: #000000; color: white;}	
 /*.fa-envelope { background: #000000; color: white; }	 */
 
 /* Icon Text Box */
