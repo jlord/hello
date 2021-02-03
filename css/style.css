@@ -25,19 +25,19 @@ p { font-weight: 200; font-size: 20px;}
 .inline-list {list-style: none; margin: 0; padding: 0;}	
 .inline-list li {display: inline-block;}	
 
-/* Icon rendered at bottom of page 
+/* Icon rendered at bottom of page */
 .fa { padding: 15px; font-size: 30px; width: 30px; text-align: center; text-decoration: none; border-radius: 50%; }	
 .fa:hover { opacity: 0.7;}	
 .fa-linkedin { background: #007bb5; color: white;}	
 .fa-github { background: #000000;}	
-.fa-envelope { background: #000000; color: white; }	*/
+.fa-envelope { background: #000000; color: white; }	
 
-/* Icon rendered at bottom of page */
+/* Icon rendered at bottom of page 
 .fa { background: #66ffdc; float: right; font-size: 1.2em}	
 .fa:hover { color: #fff; border-radius: 50%; box-shadow: 0px 0px 5px #000;}	
 .fa-linkedin { background: #007bb5; color: white;}	
 .fa-github { background: #000000;}	
-.fa-envelope { background: #000000; color: white; }	
+.fa-envelope { background: #000000; color: white; }	*/
 
 /* Icon text box */
 footer .inline-list li {padding-right: 40px; padding-top: 10px; padding-bottom:10px; }	
