@@ -1,4 +1,4 @@
-/* Stylez */
+/* Styles */
 body { 
 font-family: Franklin Gothic Book, Source Sans Pro, Helvetica Neue, sans-serif; 
 margin: 0 auto; 
@@ -8,6 +8,7 @@ box-sizing: border-box;
 color: #333; 
 overflow: auto;
 background: url(./background.png) no-repeat center center fixed ; /*background image*/
+background-size: cover;
 
 }
 
