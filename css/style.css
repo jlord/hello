@@ -7,7 +7,7 @@ padding: 12px;
 box-sizing: border-box; 
 color: #333; 
 overflow: auto;
-background: url(./background.png); /*background image*/
+background: url(./background.png) no-repeat center center fixed ; /*background image*/
 
 }
 
