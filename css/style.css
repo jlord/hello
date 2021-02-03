@@ -22,11 +22,11 @@ p { font-weight: 200; font-size: 20px;}
 /* Icons */
 .fa { padding: 15px; font-size: 30px; width: 30px; text-align: center; text-decoration: none; border-radius: 50%; }	
 .fa:hover { opacity: 0.7;}	
-.fa-linkedin { background: #007bb5;}
+.fa-blue { background: #007bb5;}
  /*.fa-linkedin { background: #007bb5; color: white;}	*/
 
-.fa-github { background: #000000;}	
-.fa-envelope { background: #000000; color: white; }	
+.fa-black { background: #000000;}	
+/*.fa-envelope { background: #000000; color: white; }	 */
 
 /* Icon Text Box */
 footer .inline-list li {padding-right: 40px; padding-top: 10px; padding-bottom:10px; }	
