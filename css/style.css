@@ -11,7 +11,7 @@ background: url(./background.png); /*background image*/
 
 }
 
-/*body, html {height: 100% ;}*/
+body, html {height: 100% ;}
 
 .wrapper {box-sizing: border-box; background: #fff; box-shadow: 0 0 5px #888; box-shadow: 0 0 5px #888; height: 100%; overflow: auto; }
 
