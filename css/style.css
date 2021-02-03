@@ -41,7 +41,7 @@ p { font-weight: 200; font-size: 20px;}
 
 /* Icon text box */
 footer .inline-list li {padding-right: 40px; padding-top: 10px; padding-bottom:10px; }	
-footer { position:absolute; bottom:20px; left:0px; width:100%; color:#fff; background:#000; opacity: 0.5; text-align: right;}
+footer { position:absolute; bottom:20px; left:0px; width:100%; color:#fff; background:#fff; opacity: 0.5; text-align: right;}
 
 /*footer {margin: 0 auto; position: absolute; bottom: 0px; padding: 40px 0; width: 600px; background:#000}*/	
 /*menu{position:absolute;bottom:20px;left:141px;z-index:80;width:100%;line-height:12px}
