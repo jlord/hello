@@ -26,11 +26,11 @@ p { font-weight: 200; font-size: 20px;}
 .inline-list li {display: inline-block;}	
 
 /* Icon rendered at bottom of page */
-.fa { padding: 20px; font-size: 20px; width: 20px; text-align: center; text-decoration: none; border-radius: 50%; opacity: 1 }	
+.fa { padding: 20px; font-size: 30px; width: 30px; text-align: center; text-decoration: none; border-radius: 50%; }	
 .fa:hover { opacity: 0.7;}	
-.fa-linkedin { background: #007bb5; color: white;}	
-.fa-github { background: #000000 }	
-.fa-envelope { background: #000000; color: white;}	
+.fa-linkedin { background: #007bb5; color: white; opacity: 1}	
+.fa-github { background: #000000; opacity: 1}	
+.fa-envelope { background: #000000; color: white; opacity: 1}	
 
 footer .inline-list li {padding-right: 40px;}	
 footer { position:absolute; bottom:20px; left:0px; width:100%; color:#fff; background:#000; opacity: 0.5; text-align: right;}
