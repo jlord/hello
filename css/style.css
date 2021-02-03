@@ -12,7 +12,9 @@ a { color: #fff; text-decoration: none; border-bottom: 1px solid #CCFF26;}
 a:hover { border-bottom: 1px solid #CCFF26; color: #222;}	
 p { font-weight: 200; font-size: 20px;}
 
-.name { font-family: Playfair Display; font-size: 50px; font-weight: 900; padding-bottom: 20px;}	
+/*.name { font-family: Playfair Display; font-size: 50px; font-weight: 900; padding-bottom: 20px;}*/
+.name { font-family: Lucida Grande, sans-serif; font-size: 50px; font-weight: 900; padding-bottom: 10px;}	
+
 .container { margin: 0 auto; padding: 80px 12px 0px 50px; overflow: auto;}	
 
 /*.meta {text-transform: uppercase; font-family: Courier New, Quicksand, "Helvetica Neue", "Arial", sans-serif; font-size: 11px; letter-spacing: .15em;}	*/
