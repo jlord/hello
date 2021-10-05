@@ -1,0 +1,2 @@
+hello, it`s a some text about this dir
+ 
