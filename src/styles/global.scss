@@ -1,0 +1,32 @@
+@import '~normalize.css/normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&family=Poppins:wght@500;600&display=swap');
+@import './typography.scss';
+
+h1 {
+  font-size: 3rem;
+  font-family: 'Poppins';
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-family: 'Poppins';
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 2rem;
+  font-family: 'Poppins';
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-family: 'Poppins';
+  font-weight: 600;
+}
+
+* {
+  font-family: 'Poppins';
+  font-weight: 500;
+}
