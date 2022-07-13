@@ -6,7 +6,7 @@ type FollowMeProps = React.HTMLProps<HTMLDivElement> & {
   instagramURL?: string
   soundCloudURL?: string
 }
-export function FollowMe (props: FollowMeProps) {
+export function FollowMe(props: FollowMeProps) {
   const { instagramURL = '#', soundCloudURL = '#' } = props
   return (
     <div className={styles.container}>
