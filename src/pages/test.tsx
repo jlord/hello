@@ -1,11 +1,11 @@
 import React from 'react'
-import { FollowMe } from '../components/FollowMe'
+import { EntryText } from '../components/EntryText'
 import '../styles/global.scss'
 
 export default function Page() {
   return (
     <>
-      <FollowMe />
+      <EntryText />
     </>
   )
 }

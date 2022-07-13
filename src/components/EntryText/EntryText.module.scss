@@ -1,0 +1,44 @@
+@import '../../styles/colors.scss';
+
+.container {
+  max-width: 40ch;
+
+  h1 {
+    font-family: 'DAGGERSQUARE regular';
+    font-size: 4rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    color: $ff_red;
+
+    &::after {
+      content: '';
+      display: block;
+      height: 0.5rem;
+      margin-top: 1rem;
+      width: 3ch;
+      background-color: $ff_red;
+    }
+  }
+
+  p {
+    line-height: 1.4rem;
+  }
+}
+
+.row {
+  display: grid;
+  grid-auto-flow: column;
+  place-items: center;
+  gap: 1rem;
+  width: max-content;
+}
+
+.icon {
+  height: 2rem;
+  width: 2rem;
+}
+
+.buttons {
+  margin-top: 2rem;
+  padding: 0.3rem;
+}
