@@ -5,7 +5,7 @@ import useSWR from 'swr'
 import { filterProps, setDefaultClasses } from '../../utils/props'
 import * as styles from './svg.module.scss'
 
-type SVGIconProps = {
+type SVGProps = {
   icon: string
   alt?: string
   colorize?: boolean
@@ -14,7 +14,7 @@ type SVGIconProps = {
 const fetcher = (...args: Parameters<typeof axios.get>) =>
   axios.get(...args).then((response) => response.data)
 
-export function SVGIcon(props: SVGIconProps) {
+export function SVG(props: SVGProps) {
   const { icon, alt, colorize } = props
   const htmlProps = filterProps(props, ['icon', 'alt', 'colorize'])
 
