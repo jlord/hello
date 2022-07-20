@@ -7,20 +7,25 @@
   width: 100%;
   display: grid;
   place-items: center;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 
   .internalGrid {
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: 1fr;
+    // display: grid;
+    // grid-auto-flow: column;
+    // grid-auto-columns: 1fr;
+    display: flex;
+    flex-direction: row;
     align-items: baseline;
-    max-width: $content-width;
-    width: max-content;
+    justify-content: space-between;
+    width: min(100%, $content-width);
+    white-space: nowrap;
 
     .logo {
       color: $ff_white;
       height: 3rem;
+      align-self: center;
+      width: max-content;
     }
 
     .message {
