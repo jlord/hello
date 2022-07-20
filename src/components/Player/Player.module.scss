@@ -1,0 +1,22 @@
+@import '../../styles/variables.scss';
+@import '../../styles/colors.scss';
+
+.container {
+  display: grid;
+  place-items: center;
+  background-color: $ff_dark_grey;
+  // padding-top: 2rem;
+  padding-bottom: 3rem;
+  width: 100%;
+
+  .internalGrid {
+    width: min(100%, $content-width);
+    display: grid;
+
+    .title {
+      color: $ff_white;
+      font-family: 'DAGGERSQUARE Regular';
+      text-transform: uppercase;
+    }
+  }
+}
