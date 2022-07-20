@@ -1,0 +1,31 @@
+@import '../../styles/colors.scss';
+@import '../../styles/variables.scss';
+
+.container {
+  background-color: $ff_darkest_grey;
+  color: $ff_grey;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  .internalGrid {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    align-items: baseline;
+    max-width: $content-width;
+    width: max-content;
+
+    .logo {
+      color: $ff_white;
+      height: 3rem;
+    }
+
+    .message {
+      color: $ff_grey;
+      font-family: 'Poppins';
+    }
+  }
+}

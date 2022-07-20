@@ -1,11 +1,11 @@
 import React from 'react'
-import { Introduction } from '../templates/Introduction'
+import { BottomBar } from '../components/BottomBar'
 import '../styles/global.scss'
 
 export default function Page() {
   return (
     <>
-      <Introduction />
+      <BottomBar />
     </>
   )
 }
