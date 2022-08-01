@@ -7,7 +7,7 @@ const Embeded = () => (
   <iframe
     width="100%"
     height="120"
-    src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2FGTO90%2Fapex-sessions-turn-11%2F"
+    src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2FGTO90%2Fapex-sessions-turn-11%2F"
     frameBorder="0"
   ></iframe>
 )
@@ -21,7 +21,9 @@ export function Player(props: PlayerProps) {
     <div {...htmlProps}>
       <div className={styles.internalGrid}>
         <h2 className={styles.title}>Listen to my new mix</h2>
-        <Embeded />
+        <div className={styles.embeded}>
+          <Embeded />
+        </div>
       </div>
     </div>
   )

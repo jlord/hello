@@ -5,7 +5,6 @@
   display: grid;
   place-items: center;
   background-color: $ff_dark_grey;
-  // padding-top: 2rem;
   padding-bottom: 3rem;
   width: 100%;
 
@@ -17,6 +16,19 @@
       color: $ff_white;
       font-family: 'DAGGERSQUARE Regular';
       text-transform: uppercase;
+    }
+
+    .embeded {
+      display: grid;
+      place-items: center;
+      background-color: red;
+      overflow: hidden;
+      width: $content-width;
+
+      iframe {
+        margin: -0.1rem;
+        margin-right: -0.2rem;
+      }
     }
   }
 }
