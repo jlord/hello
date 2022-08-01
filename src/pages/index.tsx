@@ -1,7 +1,7 @@
 import * as React from 'react'
 import '../styles/global.scss'
-import Component from '../components/test'
+import { HomePage } from '../templates/HomePage'
 
-export default function Page () {
-  return <Component />
+export default function Page() {
+  return <HomePage />
 }

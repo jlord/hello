@@ -1,0 +1,12 @@
+@import '../../styles/variables.scss';
+@import '../../styles/colors.scss';
+
+.container {
+  display: grid;
+  justify-items: center;
+
+  .intro {
+    display: grid;
+    grid-template: 'intro' max-content '.' 50rem / #{$content-width};
+  }
+}
