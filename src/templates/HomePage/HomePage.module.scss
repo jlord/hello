@@ -4,6 +4,8 @@
 .container {
   display: grid;
   justify-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   .intro {
     display: grid;

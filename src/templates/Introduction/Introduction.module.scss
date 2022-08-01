@@ -1,3 +1,5 @@
+@import '../../styles/colors.scss';
+
 .container {
   display: grid;
   width: 100%;
@@ -12,6 +14,7 @@
     justify-self: start;
     align-self: flex-start;
     width: 12rem;
+    color: $ff_white;
   }
 
   .followMe {

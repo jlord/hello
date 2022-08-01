@@ -11,7 +11,7 @@ export function Introduction(props: IntroductionProps) {
   setDefaultClasses(htmlProps, [styles.container])
   return (
     <div {...htmlProps}>
-      <SVG icon="logo-horizontal" className={styles.logo} />
+      <SVG icon="logo-horizontal" className={styles.logo} colorize />
       <SVG icon="boat" className={styles.boat} />
       <EntryText className={styles.text} />
       <FollowMe className={styles.followMe} />
