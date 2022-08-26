@@ -32,7 +32,10 @@ type QueryReturnType = {
   }
 }
 
-type AvailableImages = 'animation-background' | 'page-background'
+type AvailableImages =
+  | 'animation-background'
+  | 'page-background'
+  | 'album-cover'
 
 export function useImage(image: AvailableImages) {
   const data: QueryReturnType = useStaticQuery(query)

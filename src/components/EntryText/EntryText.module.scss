@@ -1,12 +1,12 @@
 @import '../../styles/colors.scss';
+@import '../../styles/mixins.scss';
 
 .container {
   max-width: 40ch;
 
   h1 {
-    font-family: 'DAGGERSQUARE regular';
+    @include daggersquare;
     font-size: 4rem;
-    text-transform: uppercase;
     margin-bottom: 2rem;
     color: $ff_red;
 

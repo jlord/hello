@@ -6,6 +6,7 @@ export type AvailableIcons =
   | 'logo-vertical'
   | 'music-background'
   | 'page-background-scalable'
+  | 'album-play-button'
 
 type QueryReturnType = {
   allFile: {

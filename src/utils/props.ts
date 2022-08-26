@@ -22,3 +22,18 @@ export function setDefaultClasses(
   }
   props.className = classes
 }
+
+type Options = {
+  prioritizeDefaultClasses?: boolean
+}
+
+export function composeProps<T extends { className?: string }, U extends keyof T>(
+  props: T,
+  filterOut: U[],
+  classesToAdd: string[] = [],
+  options?: Options
+) {
+  const htmlProps = filterProps(props, filterOut)
+  setDefaultClasses(htmlProps, classesToAdd, !!options?.prioritizeDefaultClasses)
+  return htmlProps
+}

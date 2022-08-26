@@ -1,0 +1,92 @@
+@use 'sass:color';
+@import '../../styles/mixins.scss';
+@import '../../styles/colors.scss';
+
+.container {
+  display: grid;
+  grid-template: 'previous current next' max-content / 1fr 2fr 1fr;
+
+  .next {
+    grid-area: next;
+  }
+
+  .current {
+    grid-area: current;
+  }
+
+  .previous {
+    grid-area: previous;
+  }
+}
+
+.title {
+  display: grid;
+  place-items: center;
+
+  .album {
+    color: $ff_black;
+    font-weight: 900;
+    font-size: 1.5rem;
+  }
+
+  .musicName {
+    @include daggersquare;
+    font-size: 3rem;
+    color: $ff_white;
+  }
+
+  .link {
+    font-weight: 100;
+    font-size: 0.8rem;
+    display: grid;
+    grid-auto-flow: column;
+    place-items: center;
+    gap: 0.3rem;
+    color: $ff_white;
+    text-decoration: none;
+  }
+}
+
+.frame {
+  position: relative;
+  display: grid;
+  place-items: center;
+  height: 35rem;
+
+  .frameBackground {
+    position: absolute;
+    height: 35rem;
+  }
+
+  .cover {
+    position: relative;
+    top: -0.5rem;
+    height: 21rem;
+    width: 21rem;
+    background-position: center;
+    background-size: contain;
+
+    .buttonOverlay {
+      display: grid;
+      place-items: center;
+      background-color: color.adjust($ff_dark_grey, $alpha: -0.5);
+      height: 100%;
+
+      .button {
+        display: block;
+        width: 50%;
+        height: 50%;
+
+        .icon {
+          transition: transform 0.5s;
+        }
+
+        &:hover {
+          .icon {
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+  }
+}
