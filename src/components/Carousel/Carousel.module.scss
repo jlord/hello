@@ -2,20 +2,44 @@
 @import '../../styles/mixins.scss';
 @import '../../styles/colors.scss';
 
+$content-height: 35rem;
+$title-height: 6rem;
+
+@mixin carousel-area {
+  display: grid;
+  grid-template: 'title' #{$title-height} 'content' #{$content-height} / 1fr;
+  gap: 1rem;
+
+  .carouselAreaContent {
+    display: grid;
+    grid-area: content;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+$grid-margin-correction: -15rem;
+
 .container {
   display: grid;
   grid-template: 'previous current next' max-content / 1fr 2fr 1fr;
 
   .next {
     grid-area: next;
+    @include carousel-area;
+    margin-left: $grid-margin-correction;
   }
 
   .current {
     grid-area: current;
+    @include carousel-area;
   }
 
   .previous {
     grid-area: previous;
+    @include carousel-area;
+    margin-right: $grid-margin-correction;
   }
 }
 
@@ -45,17 +69,26 @@
     color: $ff_white;
     text-decoration: none;
   }
+
+  &.disabled {
+    .link,
+    .musicName,
+    .album {
+      color: color.adjust($ff_white, $alpha: -0.6);
+      cursor: auto;
+    }
+  }
 }
 
 .frame {
   position: relative;
   display: grid;
   place-items: center;
-  height: 35rem;
+  height: $content-height;
 
   .frameBackground {
     position: absolute;
-    height: 35rem;
+    height: $content-height;
   }
 
   .cover {
@@ -88,5 +121,32 @@
         }
       }
     }
+  }
+}
+
+$carousel-button-radius: 5rem;
+
+.carouselButton {
+  all: unset;
+  height: $carousel-button-radius;
+  width: $carousel-button-radius;
+  cursor: pointer;
+  transition: transform 0.5s;
+  .icon {
+    height: $carousel-button-radius;
+    width: $carousel-button-radius;
+    color: $ff_white;
+  }
+
+  &:disabled {
+    pointer-events: none;
+    cursor: auto;
+    .icon {
+      color: color.adjust($ff_white, $alpha: -0.6);
+    }
+  }
+
+  &:active {
+    transform: scale(1.1);
   }
 }
