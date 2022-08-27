@@ -46,20 +46,24 @@ $grid-margin-correction: -15rem;
 .title {
   display: grid;
   place-items: center;
+  grid-template: 'album' 1.5rem 'music' 3rem 'link' 0.8rem / 1fr;
 
   .album {
     color: $ff_black;
     font-weight: 900;
     font-size: 1.5rem;
+    grid-area: album;
   }
 
   .musicName {
     @include daggersquare;
     font-size: 3rem;
     color: $ff_white;
+    grid-area: music;
   }
 
   .link {
+    grid-area: link;
     font-weight: 100;
     font-size: 0.8rem;
     display: grid;
