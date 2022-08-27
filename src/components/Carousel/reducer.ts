@@ -22,15 +22,15 @@ function reducer(state: Readonly<Store>, message: Message) {
       newState.animationState = 'ANIMATING_NEXT'
       newState.currentMusicIndex = state.currentMusicIndex + 1
       newState.enableNextButton =
-        state.currentMusicIndex + 2 < state.musics.length
-      newState.enablePreviousButton = state.currentMusicIndex > 0
+        newState.currentMusicIndex + 1 < state.musics.length
+      newState.enablePreviousButton = newState.currentMusicIndex > 0
       break
     case 'PREVIOUS':
       newState.animationState = 'ANIMATING_PREVIOUS'
       newState.currentMusicIndex = state.currentMusicIndex - 1
       newState.enableNextButton =
-        state.currentMusicIndex + 2 < state.musics.length
-      newState.enablePreviousButton = state.currentMusicIndex > 0
+        newState.currentMusicIndex + 1 < state.musics.length
+      newState.enablePreviousButton = newState.currentMusicIndex > 0
       break
     case 'NEXT_ANIMATION_ENDED':
       newState.animationState = 'STATIC'

@@ -142,6 +142,9 @@ export function Carousel(props: CarouselProps) {
           <CarouselButton
             type="previous"
             disabled={!state.enablePreviousButton}
+            onClick={() => {
+              dispatcher('PREVIOUS')
+            }}
           />
         </div>
       </CarouselSideArea>
@@ -158,7 +161,13 @@ export function Carousel(props: CarouselProps) {
           ''
         )}
         <div data-entity="button" className={styles.carouselAreaContent}>
-          <CarouselButton type="next" disabled={!state.enableNextButton} />
+          <CarouselButton
+            type="next"
+            disabled={!state.enableNextButton}
+            onClick={() => {
+              dispatcher('NEXT')
+            }}
+          />
         </div>
       </CarouselSideArea>
     </div>
