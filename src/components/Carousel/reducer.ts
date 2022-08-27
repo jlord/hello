@@ -57,22 +57,27 @@ export function useCarouselReducer(
 
   const [state, dispatch] = useReducer(reducer, defaultState)
   const wrappedDispatcher = (message: Message) => {
-    if (message === 'NEXT' || message === 'PREVIOUS') {
-      dispatch(message)
-      containerRef.current.addEventListener(
-        'animationend',
-        () => {
-          dispatch(
-            message === 'NEXT'
-              ? 'NEXT_ANIMATION_ENDED'
-              : 'PREVIOUS_ANIMATION_ENDED'
-          )
-        },
-        { once: true }
-      )
-    } else {
-      dispatch(message)
-    }
+    /*
+      The code below enables the use of animation states.
+      if (message === 'NEXT' || message === 'PREVIOUS') {
+        dispatch(message)
+        containerRef.current.addEventListener(
+          'animationend',
+          () => {
+            dispatch(
+              message === 'NEXT'
+                ? 'NEXT_ANIMATION_ENDED'
+                : 'PREVIOUS_ANIMATION_ENDED'
+            )
+          },
+          { once: true }
+        )
+      } else {
+        dispatch(message)
+      }
+    */
+
+    dispatch(message)
   }
 
   return [state, wrappedDispatcher]

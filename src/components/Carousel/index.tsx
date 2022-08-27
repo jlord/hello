@@ -57,6 +57,23 @@ function MusicCover(props: MusicCoverProps) {
   const { music } = props
   const htmlProps = composeProps(props, ['children', 'ref'], [styles.frame])
 
+  if (music.toRelease) {
+    return (
+      <div {...htmlProps}>
+        <SVG icon="music-background" className={styles.frameBackground} />
+        <div
+          data-entity="cover"
+          style={useBackgroundImage(useImage('album-cover') as string)}
+          className={styles.cover}
+        >
+          <div className={styles.buttonOverlay}>
+            <span className={styles.soon}>Soon</span>
+          </div>
+        </div>
+      </div>
+    )
+  }
+
   return (
     <div {...htmlProps}>
       <SVG icon="music-background" className={styles.frameBackground} />

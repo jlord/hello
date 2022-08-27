@@ -99,6 +99,10 @@ $grid-margin-correction: -15rem;
     background-position: center;
     background-size: contain;
 
+    .soon {
+      color: $ff_white;
+    }
+
     .buttonOverlay {
       display: grid;
       place-items: center;
