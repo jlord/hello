@@ -9,6 +9,7 @@
 
   .intro {
     display: grid;
-    grid-template: 'intro' max-content '.' 50rem / #{$content-width};
+    grid-template: 'intro' max-content 'carousel' max-content / #{$content-width};
+    gap: 5rem;
   }
 }
