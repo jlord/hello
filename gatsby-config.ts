@@ -36,7 +36,13 @@ const config: GatsbyConfig = {
         path: './data/'
       }
     },
-    'gatsby-transformer-json'
+    'gatsby-transformer-json',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: './src/videos/'
+      }
+    }
   ]
 }
 
