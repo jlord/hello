@@ -1,34 +1,27 @@
 import React from 'react'
 import { GrSoundcloud, GrInstagram } from 'react-icons/gr'
+import { useLinks } from '../../utils/hooks/useLinks'
 import { filterProps, setDefaultClasses } from '../../utils/props'
 import * as styles from './FollowMe.module.scss'
 
 type FollowMeProps = React.HTMLProps<HTMLDivElement> & {
-  instagramURL?: string
-  soundCloudURL?: string
   light?: boolean
 }
 export function FollowMe(props: FollowMeProps) {
-  const { instagramURL = '#', soundCloudURL = '#', light = false } = props
-  const htmlProps = filterProps(props, [
-    'instagramURL',
-    'soundCloudURL',
-    'light'
-  ])
+  const { light = false } = props
+  const htmlProps = filterProps(props, ['light'])
+  const { instagram, soundcloud } = useLinks()
   setDefaultClasses(htmlProps, [styles.container, light ? styles.light : ''])
   return (
     <div {...htmlProps}>
       <p className={styles.label}>Follow Me</p>
       <a
-        href={soundCloudURL}
+        href={soundcloud}
         className={[styles.icon, styles.soundCloud].join(' ')}
       >
         <GrSoundcloud />
       </a>
-      <a
-        href={instagramURL}
-        className={[styles.icon, styles.instagram].join(' ')}
-      >
+      <a href={instagram} className={[styles.icon, styles.instagram].join(' ')}>
         <GrInstagram />
       </a>
     </div>
