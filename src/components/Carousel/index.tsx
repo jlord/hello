@@ -2,139 +2,19 @@
 import React, {
   type HTMLProps,
   useRef,
-  MutableRefObject,
-  type MouseEventHandler
+  MutableRefObject
 } from 'react'
-import { GrSoundcloud } from 'react-icons/gr'
-import { BiChevronRightCircle, BiChevronLeftCircle } from 'react-icons/bi'
-import { useBackgroundImage, useImage } from '../../utils/hooks/useImage'
 import { composeProps } from '../../utils/props'
-import { SVG } from '../../components/SVG'
+import { Title } from './components/Title'
+import { MusicCover } from './components/MusicCover'
+import { CarouselSideArea } from './components/SideArea'
+import { CarouselButton } from './components/Button'
 import { type Music } from './types'
 import { useCarouselReducer } from './reducer'
 import * as styles from './Carousel.module.scss'
 
 type CarouselProps = HTMLProps<HTMLDivElement> & {
   musics: Music[]
-}
-
-type TitleProps = HTMLProps<HTMLDivElement> & {
-  music: Music
-  disabled?: boolean
-}
-function Title(props: TitleProps) {
-  const { music, disabled = false } = props
-  const htmlProps = composeProps(
-    props,
-    ['children', 'ref', 'music', 'disabled'],
-    [styles.title, disabled ? styles.disabled : '']
-  )
-
-  if (music.toRelease) {
-    return (
-      <div {...htmlProps}>
-        <div className={styles.album}>Release soon</div>
-        <div className={styles.musicName}>{music.name}</div>
-      </div>
-    )
-  }
-
-  return (
-    <div {...htmlProps}>
-      <div className={styles.album}>{music.album}</div>
-      <div className={styles.musicName}>{music.name}</div>
-      <a href={music.link} className={styles.link}>
-        Soudcloud <GrSoundcloud />
-      </a>
-    </div>
-  )
-}
-
-type MusicCoverProps = HTMLProps<HTMLDivElement> & {
-  music: Music
-}
-function MusicCover(props: MusicCoverProps) {
-  const { music } = props
-  const htmlProps = composeProps(props, ['children', 'ref'], [styles.frame])
-
-  if (music.toRelease) {
-    return (
-      <div {...htmlProps}>
-        <SVG icon="music-background" className={styles.frameBackground} />
-        <div
-          data-entity="cover"
-          style={useBackgroundImage(useImage('album-cover') as string)}
-          className={styles.cover}
-        >
-          <div className={styles.buttonOverlay}>
-            <span className={styles.soon}>Soon</span>
-          </div>
-        </div>
-      </div>
-    )
-  }
-
-  return (
-    <div {...htmlProps}>
-      <SVG icon="music-background" className={styles.frameBackground} />
-      <div
-        data-entity="cover"
-        style={useBackgroundImage(useImage('album-cover') as string)}
-        className={styles.cover}
-      >
-        <div className={styles.buttonOverlay}>
-          <a href={music.link} className={styles.button}>
-            <SVG icon="album-play-button" className={styles.icon} />
-          </a>
-        </div>
-      </div>
-    </div>
-  )
-}
-
-type CarouselSideAreaProps = HTMLProps<HTMLDivElement> & {
-  type: 'previous' | 'next'
-}
-function CarouselSideArea(props: CarouselSideAreaProps) {
-  const { children, type } = props
-  const htmlProps = composeProps(
-    props,
-    ['children', 'ref', 'type'],
-    [type === 'previous' ? styles.previous : styles.next]
-  )
-
-  return <div {...htmlProps}>{children}</div>
-}
-
-type CarouselButtonProps = HTMLProps<HTMLButtonElement> & {
-  type: 'previous' | 'next'
-}
-function CarouselButton(props: CarouselButtonProps) {
-  const { type, onClick, disabled } = props
-  const htmlProps = composeProps(
-    props,
-    ['children', 'ref', 'type', 'onClick'],
-    [styles.carouselButton]
-  )
-
-  const icon =
-    type === 'previous' ? (
-      <BiChevronLeftCircle className={styles.icon} />
-    ) : (
-      <BiChevronRightCircle className={styles.icon} />
-    )
-
-  const clickHandler: MouseEventHandler<HTMLButtonElement> = (e) => {
-    if (!disabled) {
-      ;(onClick ?? (() => {}))(e)
-    }
-  }
-
-  return (
-    <button {...htmlProps} onClick={clickHandler}>
-      {icon}
-    </button>
-  )
 }
 
 export function Carousel(props: CarouselProps) {
