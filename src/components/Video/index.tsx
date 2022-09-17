@@ -5,13 +5,14 @@ import * as styles from './Video.module.scss'
 
 type VideoProps = HTMLProps<HTMLDivElement> & {
   src: string
+  poster?: string
 }
 
 export function Video(props: VideoProps) {
-  const { src } = props
+  const { src, poster } = props
   const htmlProps = composeProps(
     props,
-    ['children', 'ref', 'src'],
+    ['children', 'ref', 'src', 'poster'],
     [styles.container]
   )
 
@@ -32,7 +33,7 @@ export function Video(props: VideoProps) {
   return (
     <div {...htmlProps} onClick={toggleVideo} ref={props.ref}>
       {showOverlay && <Overlay />}
-      <video src={src} id={videoId} />
+      <video src={src} id={videoId} poster={poster} />
     </div>
   )
 }

@@ -14,6 +14,7 @@ export function MusicCover(props: MusicCoverProps) {
   const { music } = props
   const htmlProps = composeProps(props, ['children', 'ref'], [styles.frame])
   const videoURL = useVideo(music.video as any)
+  const backgroundImage = useImage('album-cover')
 
   if (music.toRelease) {
     return (
@@ -21,7 +22,7 @@ export function MusicCover(props: MusicCoverProps) {
         <SVG icon="music-background" className={styles.frameBackground} />
         <div
           data-entity="cover"
-          style={useBackgroundImage(useImage('album-cover') as string)}
+          style={useBackgroundImage(backgroundImage as string)}
           className={styles.cover}
         >
           <div className={styles.buttonOverlay}>
@@ -37,10 +38,10 @@ export function MusicCover(props: MusicCoverProps) {
       <SVG icon="music-background" className={styles.frameBackground} />
       <div
         data-entity="cover"
-        style={useBackgroundImage(useImage('album-cover') as string)}
+        style={useBackgroundImage(backgroundImage as string)}
         className={styles.cover}
       >
-        <Video src={videoURL} />
+        <Video src={videoURL} poster={backgroundImage} />
       </div>
     </div>
   )
