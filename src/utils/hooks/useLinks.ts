@@ -5,6 +5,7 @@ const query = graphql`
     dataJson {
       instagram
       soundcloud
+      watchVideoButtonLink
     }
   }
 `
@@ -13,6 +14,7 @@ type Links = {
   dataJson: {
     instagram: string
     soundcloud: string
+    watchVideoButtonLink: string
   }
 }
 

@@ -10,7 +10,7 @@ type EntryTextProps = HTMLProps<HTMLDivElement>
 export function EntryText(props: EntryTextProps) {
   const htmlProps = filterProps(props, [])
   setDefaultClasses(htmlProps, [styles.container])
-  const { soundcloud } = useLinks()
+  const { soundcloud, watchVideoButtonLink } = useLinks()
   return (
     <div {...htmlProps}>
       <h1>{"Funkin' it forward"}</h1>
@@ -20,7 +20,7 @@ export function EntryText(props: EntryTextProps) {
       </p>
       <p>Take a look at our new album release</p>
       <div className={[styles.row, styles.buttons].join(' ')}>
-        <Button fill href="#">
+        <Button fill href={watchVideoButtonLink}>
           <div className={styles.row}>
             <p>Watch Video</p>
             <BsPlayCircle className={styles.icon} />
