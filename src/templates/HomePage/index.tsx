@@ -18,19 +18,22 @@ export function HomePage() {
       name: '01. Track 1',
       album: 'Test Album',
       link: '#track1',
-      toRelease: false
+      toRelease: false,
+      video: 'GTO90-Scene-001-New'
     },
     {
       name: '02. Track 2',
       album: 'Test Album',
       link: '#track2',
-      toRelease: false
+      toRelease: false,
+      video: 'GTO90-Scene-001-New'
     },
     {
       name: '03. Track 3',
       album: 'Test Album',
       link: '#track3',
-      toRelease: true
+      toRelease: true,
+      video: 'GTO90-Scene-001-New'
     }
   ]
   return (

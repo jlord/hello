@@ -1,9 +1,5 @@
 /* eslint-disable multiline-ternary */
-import React, {
-  type HTMLProps,
-  useRef,
-  MutableRefObject
-} from 'react'
+import React, { type HTMLProps, useRef, MutableRefObject } from 'react'
 import { composeProps } from '../../utils/props'
 import { Title } from './components/Title'
 import { MusicCover } from './components/MusicCover'
@@ -48,7 +44,10 @@ export function Carousel(props: CarouselProps) {
 
       <div data-entity="currentMusic" className={styles.current}>
         <Title music={currentMusic} />
-        <MusicCover music={currentMusic} />
+        <MusicCover
+          music={currentMusic}
+          key={currentMusic.name + currentMusic.album}
+        />
       </div>
 
       <CarouselSideArea type="next">

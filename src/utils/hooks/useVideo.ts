@@ -27,7 +27,8 @@ type QueryReturnType = {
   }
 }
 
-export function useVideo(videoName: AvailableVideos) {
+export function useVideo(videoName?: AvailableVideos) {
+  if (!videoName) return ''
   const data: QueryReturnType = useStaticQuery(getVideosQuery)
   const videos = data.allFile.edges
     .filter((edge) => edge.node.name === videoName)
