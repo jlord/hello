@@ -1,0 +1,36 @@
+@import '../../styles/colors.scss';
+@import '../../styles/variables.scss';
+
+.container {
+  background-color: $ff_darkest_grey;
+  color: $ff_grey;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  .internalGrid {
+    // display: grid;
+    // grid-auto-flow: column;
+    // grid-auto-columns: 1fr;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    width: min(100%, $content-width);
+    white-space: nowrap;
+
+    .logo {
+      color: $ff_white;
+      height: 3rem;
+      align-self: center;
+      width: max-content;
+    }
+
+    .message {
+      color: $ff_grey;
+      font-family: 'Poppins';
+    }
+  }
+}

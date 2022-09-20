@@ -1,1 +1,6 @@
-.DS_Store
+node_modules/
+.cache/
+public/
+!public/.nojekyll
+src/gatsby-types.d.ts
+assets/*

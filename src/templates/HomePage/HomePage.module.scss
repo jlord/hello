@@ -1,0 +1,15 @@
+@import '../../styles/variables.scss';
+@import '../../styles/colors.scss';
+
+.container {
+  display: grid;
+  justify-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .intro {
+    display: grid;
+    grid-template: 'intro' max-content 'carousel' max-content / #{$content-width};
+    gap: 5rem;
+  }
+}

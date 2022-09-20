@@ -1,54 +1,54 @@
-# Hello Page
+<p align="center">
+  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts">
+    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
+  </a>
+</p>
+<h1 align="center">
+  Gatsby minimal TypeScript starter
+</h1>
 
-<img src="https://raw.githubusercontent.com/jlord/forkngo/gh-pages/badges/cobalt.png" width="200">
+## 🚀 Quick start
 
-![screenshot](https://user-images.githubusercontent.com/1305617/45956448-87fec380-bfe0-11e8-8b8c-1bbbee7552c6.png)
+1.  **Create a Gatsby site.**
 
-A so very simple personal site.
+    Use the Gatsby CLI to create a new site, specifying the minimal TypeScript starter.
 
-This is a [Fork-n-Go](http://jlord.github.io/forkngo) project, so fork to get started making your own.
+    ```shell
+    # create a new Gatsby site using the minimal TypeScript starter
+    npm init gatsby
+    ```
 
-See the demo at [jlord.github.io/hello](http://jlord.github.io/hello).
+2.  **Start developing.**
 
-## Create your own
+    Navigate into your new site’s directory and start it up.
 
+    ```shell
+    cd my-gatsby-site/
+    npm run develop
+    ```
 
-| You'll Need:                                 | ☟                                                 |
-|:---------------------------------------------|:--------------------------------------------------|
-| [GitHub](http://www.github.com/join) account | Basic [HTML](http://learn.shayhowe.com/html-css/) |
+3.  **Open the code and start customizing!**
 
+    Your site is now running at http://localhost:8000!
 
-### First, fork this repository.
+    Edit `src/pages/index.tsx` to see your site update in real-time!
 
-Click the fork button in the upper right. Now you have a copy of this repository on your GitHub account!
+4.  **Learn more**
 
-### Rename your fork
+    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
 
-Once you've forked it, click on Settings and rename your fork, because probably `hello` is not what you want in your URL. Name your new repository: `username.github.io` (but make `username` your username, for instance, I'd use `jlord.github.io`). GitHub will host all website files on the `master` branch of a repo with that account name convention. Woo! More info on that at [pages.github.com](http://www.pages.github.com).
+    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
 
-You can also give it any 'ol name and GitHub will host it using this pattern: `username.github.io/reponame`. Or you can keep it named `hello` and find it at: `username.github.io/hello`.
+    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
 
-### Make yours live
+    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
 
-1. From your fork's page on GitHub, click the index.html link, then on the next page click Edit.
-2. Make changes to the HTML so that the site reflects your name and bio.
-8. At the bottom of the site, click the Commit button to save your changes.
+    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
 
-Now your site is live! Go check it out!
+    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
 
+## 🚀 Quick start (Gatsby Cloud)
 
-### Style
+Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
 
-There are basic styles included in `style.css` but go wild and make it your own, try other things!
-
-### Bonus Style
-
-![2](screenshot2.png)
-
-There is another style option included within this repository. If you change the CSS file specified on **line 7** in `index.html` to:
-
-```HTML
-<link rel="stylesheet" type="text/css" href="css/style.css"
-```
-
-Then you'll get the other option! Commit your changes to make it live. Change the file called for back to `css/style2.css` to go back to the other.
+[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal-ts)

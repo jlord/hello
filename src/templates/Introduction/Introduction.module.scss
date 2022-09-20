@@ -1,0 +1,39 @@
+@import '../../styles/colors.scss';
+
+.container {
+  display: grid;
+  width: 100%;
+  overflow: hidden;
+  grid-template:
+    'logo followMe' 6rem
+    '. boat' 15rem
+    'text boat' 1fr / 1fr 2fr;
+
+  .logo {
+    grid-area: logo;
+    justify-self: start;
+    align-self: flex-start;
+    width: 12rem;
+    color: $ff_white;
+  }
+
+  .followMe {
+    margin-top: 1rem;
+    grid-area: followMe;
+    justify-self: end;
+    align-self: flex-start;
+  }
+
+  .text {
+    grid-area: text;
+  }
+
+  .boat {
+    grid-area: boat;
+    width: 115%;
+    height: 115%;
+    margin-left: -10rem;
+    margin-top: -10rem;
+    padding-left: 3rem;
+  }
+}

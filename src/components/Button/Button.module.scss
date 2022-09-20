@@ -1,0 +1,26 @@
+@import '../../styles/colors.scss';
+
+.container {
+  display: grid;
+  place-items: center;
+  border: 0.1rem solid $ff_red;
+  border-radius: 50rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  width: max-content;
+  height: 3.5rem;
+  color: $ff_red;
+  transition: all 0.5s;
+  text-decoration: none;
+
+  &:hover {
+    transform: scale(1.1, 1.1);
+    background-color: $ff_red;
+    color: $ff_white;
+  }
+}
+
+.fill {
+  background-color: $ff_red !important;
+  color: $ff_white !important;
+}
