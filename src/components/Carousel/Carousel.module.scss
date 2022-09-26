@@ -4,6 +4,7 @@
 
 $content-height: 35rem;
 $title-height: 6rem;
+$carousel-button-radius: 5rem;
 
 @mixin carousel-area {
   display: grid;
@@ -21,25 +22,63 @@ $title-height: 6rem;
 
 $grid-margin-correction: -15rem;
 
+@mixin responsiveSideArea {
+  @include notLarge {
+    grid-template: 'content' 1fr;
+    .title {
+      display: none;
+    }
+
+    .carouselAreaContent {
+      align-items: start;
+    }
+  }
+}
+
 .container {
   display: grid;
   grid-template: 'previous current next' max-content / 1fr 2fr 1fr;
+  @include notLarge {
+    grid-template: 'previous current next' max-content / max(
+        #{$carousel-button-radius},
+        1fr
+      ) max-content max(#{$carousel-button-radius}, 1fr);
+  }
 
   .next {
     grid-area: next;
     @include carousel-area;
     margin-left: $grid-margin-correction;
+
+    @include responsiveSideArea;
+    @include notLarge {
+      margin-left: 0;
+    }
   }
 
   .current {
     grid-area: current;
+    justify-items: center;
     @include carousel-area;
+    gap: 3rem;
+
+    @include notLarge {
+      .frame {
+        margin-left: #{$carousel-button-radius * -1};
+        margin-right: #{$carousel-button-radius * -1};
+      }
+    }
   }
 
   .previous {
     grid-area: previous;
     @include carousel-area;
     margin-right: $grid-margin-correction;
+
+    @include responsiveSideArea;
+    @include notLarge {
+      margin-right: 0;
+    }
   }
 }
 
@@ -89,6 +128,8 @@ $grid-margin-correction: -15rem;
   display: grid;
   place-items: center;
   height: $content-height;
+  height: 31rem;
+  width: 31rem;
 
   .frameBackground {
     position: absolute;
@@ -131,8 +172,6 @@ $grid-margin-correction: -15rem;
     }
   }
 }
-
-$carousel-button-radius: 5rem;
 
 .carouselButton {
   all: unset;
