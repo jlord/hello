@@ -5,6 +5,8 @@
   display: grid;
   place-items: center;
   background-color: $ff_dark_grey;
+  box-sizing: border-box;
+  padding: 0.5rem;
   padding-bottom: 3rem;
   width: 100%;
 
@@ -23,7 +25,7 @@
       place-items: center;
       background-color: red;
       overflow: hidden;
-      width: $content-width;
+      width: min(100%, $content-width);
 
       iframe {
         margin: -0.1rem;

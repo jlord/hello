@@ -1,5 +1,6 @@
 @import '../../styles/colors.scss';
 @import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
 
 .container {
   background-color: $ff_darkest_grey;
@@ -16,12 +17,24 @@
     // grid-auto-columns: 1fr;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: baseline;
     justify-content: space-between;
     width: min(100%, $content-width);
     white-space: nowrap;
 
+    @media (max-width: 600px) {
+      display: grid;
+      grid-auto-flow: row;
+      place-items: center;
+      justify-content: center;
+      gap: 1rem;
+
+      grid-template: 'follow' 'logo' 'message' / 1fr;
+    }
+
     .logo {
+      grid-area: logo;
       color: $ff_white;
       height: 3rem;
       align-self: center;
@@ -29,8 +42,15 @@
     }
 
     .message {
+      grid-area: message;
       color: $ff_grey;
       font-family: 'Poppins';
+    }
+
+    .follow {
+      grid-area: follow;
+      margin-top: -0.5rem;
+      margin-bottom: -0.5rem;
     }
   }
 }

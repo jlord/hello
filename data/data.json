@@ -1,0 +1,28 @@
+{
+  "instagram": "https://www.instagram.com/GTO90House",
+  "soundcloud": "https://soundcloud.com/gto90",
+  "mixcloud_embed": "https://www.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2FGTO90%2Fapex-sessions-turn-11%2F",
+  "watchVideoButtonLink": "#watchVideo",
+  "musics": [
+    {
+      "name": "01. Track 1",
+      "album": "Test Album",
+      "link": "#track1",
+      "toRelease": false,
+      "video": "fiGuXsvy69E"
+    },
+    {
+      "name": "02. Track 2",
+      "album": "Test Album",
+      "link": "#track2",
+      "toRelease": false,
+      "video": "fiGuXsvy69E"
+    },
+    {
+      "name": "03. Track 3",
+      "album": "Test Album",
+      "link": "#track3",
+      "toRelease": true
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 @import '../../styles/colors.scss';
+@import '../../styles/mixins.scss';
 
 .container {
   display: grid;
@@ -8,6 +9,13 @@
     'logo followMe' 6rem
     '. boat' 15rem
     'text boat' 1fr / 1fr 2fr;
+
+  @include notLarge {
+    grid-template:
+      'logo followMe' 6rem
+      'boat boat' max-content
+      'text text' 1fr / 1fr 2fr;
+  }
 
   .logo {
     grid-area: logo;
@@ -31,9 +39,19 @@
   .boat {
     grid-area: boat;
     width: 115%;
-    height: 115%;
-    margin-left: -10rem;
+    height: auto;
     margin-top: -10rem;
-    padding-left: 3rem;
+    margin-left: -10rem;
+
+    @include notLarge {
+      width: 100%;
+      margin-top: 0;
+      margin-left: 0;
+    }
+
+    @include mobile {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
   }
 }
