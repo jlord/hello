@@ -13,8 +13,8 @@ export function BottomBar(props: BottomBarProps) {
     <div {...htmlProps}>
       <div className={styles.internalGrid}>
         <SVG icon='logo-horizontal' colorize className={styles.logo} />
-        <div>All rights reserved &copy; {(new Date()).getUTCFullYear()}</div>
-        <FollowMe light />
+        <div className={styles.message}>All rights reserved &copy; {(new Date()).getUTCFullYear()}</div>
+        <FollowMe light className={styles.follow} />
       </div>
     </div>
   )
