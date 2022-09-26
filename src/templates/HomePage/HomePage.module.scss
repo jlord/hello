@@ -10,6 +10,7 @@
   .intro {
     display: grid;
     justify-content: center;
+    padding: 0.5rem;
     grid-template: 'intro' max-content 'carousel' max-content / min(
         100%,
         #{$content-width}

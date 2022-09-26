@@ -5,6 +5,8 @@
   display: grid;
   place-items: center;
   background-color: $ff_dark_grey;
+  box-sizing: border-box;
+  padding: 0.5rem;
   padding-bottom: 3rem;
   width: 100%;
 
