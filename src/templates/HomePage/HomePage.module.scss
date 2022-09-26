@@ -9,7 +9,11 @@
 
   .intro {
     display: grid;
-    grid-template: 'intro' max-content 'carousel' max-content / #{$content-width};
+    justify-content: center;
+    grid-template: 'intro' max-content 'carousel' max-content / min(
+        100%,
+        #{$content-width}
+      );
     gap: 5rem;
   }
 }

@@ -23,7 +23,7 @@
       place-items: center;
       background-color: red;
       overflow: hidden;
-      width: $content-width;
+      width: min(100%, $content-width);
 
       iframe {
         margin: -0.1rem;

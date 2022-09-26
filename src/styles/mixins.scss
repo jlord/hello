@@ -2,3 +2,15 @@
   font-family: 'DAGGERSQUARE regular';
   text-transform: uppercase;
 }
+
+@mixin mobile {
+  @media (max-width: 480px) {
+    @content;
+  }
+}
+
+@mixin notLarge {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
