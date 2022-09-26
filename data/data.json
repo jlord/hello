@@ -9,21 +9,20 @@
       "album": "Test Album",
       "link": "#track1",
       "toRelease": false,
-      "video": "GTO90-Scene-001-New"
+      "video": "fiGuXsvy69E"
     },
     {
       "name": "02. Track 2",
       "album": "Test Album",
       "link": "#track2",
       "toRelease": false,
-      "video": "GTO90-Scene-001-New"
+      "video": "fiGuXsvy69E"
     },
     {
       "name": "03. Track 3",
       "album": "Test Album",
       "link": "#track3",
-      "toRelease": true,
-      "video": "GTO90-Scene-001-New"
+      "toRelease": true
     }
   ]
 }

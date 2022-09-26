@@ -1,9 +1,8 @@
 import React, { type HTMLProps } from 'react'
 import { composeProps } from '../../../utils/props'
 import { SVG } from '../../../components/SVG'
-import { Video } from '../../../components/Video'
+import { Youtube } from '../../../components/Video/youtube'
 import { useBackgroundImage, useImage } from '../../../utils/hooks/useImage'
-import { useVideo } from '../../../utils/hooks/useVideo'
 import { Music } from '../types'
 import * as styles from '../Carousel.module.scss'
 
@@ -13,7 +12,6 @@ type MusicCoverProps = HTMLProps<HTMLDivElement> & {
 export function MusicCover(props: MusicCoverProps) {
   const { music } = props
   const htmlProps = composeProps(props, ['children', 'ref'], [styles.frame])
-  const videoURL = useVideo(music.video as any)
   const backgroundImage = useImage('album-cover')
 
   if (music.toRelease) {
@@ -41,7 +39,7 @@ export function MusicCover(props: MusicCoverProps) {
         style={useBackgroundImage(backgroundImage as string)}
         className={styles.cover}
       >
-        <Video src={videoURL} poster={backgroundImage} />
+        <Youtube videoId={music.video} />
       </div>
     </div>
   )

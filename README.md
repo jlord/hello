@@ -13,7 +13,7 @@
       album: string // Album name
       link: string // Individual soundcloud link for the track
       toRealease: boolean // false if the track has already been released
-      video: string // name of a video file at src/videos without the extension
+      video: string // video ID of an youtube video, for example if the video URL is https://www.youtube.com/watch?v=fiGuXsvy69E, the id is fiGuXsvy69E
     }[]
   }
   ```
