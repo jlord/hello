@@ -12,13 +12,11 @@
   padding-bottom: 1rem;
 
   .internalGrid {
-    // display: grid;
-    // grid-auto-flow: column;
-    // grid-auto-columns: 1fr;
+    position: relative;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: baseline;
+    align-items: center;
     justify-content: space-between;
     width: min(100%, $content-width);
     white-space: nowrap;
@@ -42,6 +40,8 @@
     }
 
     .message {
+      position: relative;
+      top: 0.2rem;
       grid-area: message;
       color: $ff_grey;
       font-family: 'Poppins';
