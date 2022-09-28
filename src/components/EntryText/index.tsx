@@ -20,13 +20,15 @@ export function EntryText(props: EntryTextProps) {
       </p>
       <p>Take a look at our new album release</p>
       <div className={[styles.row, styles.buttons].join(' ')}>
-        <Button fill href={watchVideoButtonLink}>
-          <div className={styles.row}>
+        <Button fill href={watchVideoButtonLink} className={styles.watchVideo}>
+          <div className={styles.watchVideoContent}>
             <p>Watch Video</p>
             <BsPlayCircle className={styles.icon} />
           </div>
         </Button>
-        <Button href={soundcloud}>Listen on Soundcloud</Button>
+        <Button href={soundcloud} className={styles.listenOnSouncloud}>
+          Listen on Soundcloud
+        </Button>
       </div>
     </div>
   )
