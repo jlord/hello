@@ -42,7 +42,7 @@ export function Carousel(props: CarouselProps) {
         </div>
       </CarouselSideArea>
 
-      <div data-entity="currentMusic" className={styles.current}>
+      <div data-entity="currentMusic" className={styles.current} id="currentMusic">
         <Title music={currentMusic} />
         <MusicCover
           music={currentMusic}
