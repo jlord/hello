@@ -18,10 +18,17 @@ export function FollowMe(props: FollowMeProps) {
       <a
         href={soundcloud}
         className={[styles.icon, styles.soundCloud].join(' ')}
+        target="_blank"
+        rel="noreferrer"
       >
         <GrSoundcloud />
       </a>
-      <a href={instagram} className={[styles.icon, styles.instagram].join(' ')}>
+      <a
+        href={instagram}
+        className={[styles.icon, styles.instagram].join(' ')}
+        target="_blank"
+        rel="noreferrer"
+      >
         <GrInstagram />
       </a>
     </div>
