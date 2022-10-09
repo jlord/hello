@@ -134,6 +134,7 @@ $grid-margin-correction: -15rem;
 }
 
 .frame {
+  overflow: hidden;
   position: relative;
   display: grid;
   place-items: center;

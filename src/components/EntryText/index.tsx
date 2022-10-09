@@ -26,7 +26,7 @@ export function EntryText(props: EntryTextProps) {
             <BsPlayCircle className={styles.icon} />
           </div>
         </Button>
-        <Button href={soundcloud} className={styles.listenOnSouncloud}>
+        <Button href={soundcloud} target="_blank" className={styles.listenOnSouncloud}>
           Listen on Soundcloud
         </Button>
       </div>
