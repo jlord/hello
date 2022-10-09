@@ -145,6 +145,9 @@ $grid-margin-correction: -15rem;
     width: $content-radius-mobile;
   }
 
+  padding: 1rem 1rem 2rem 1rem;
+  margin-top: -3rem;
+
   .frameBackground {
     position: absolute;
     height: $content-radius;
@@ -156,9 +159,8 @@ $grid-margin-correction: -15rem;
   .cover {
     // display: none;
     position: relative;
-    top: -0.5rem;
-    height: 21rem;
-    width: 21rem;
+    height: 60%;
+    width: 60%;
     background-position: center;
     background-size: contain;
 
