@@ -19,16 +19,22 @@
   .logo {
     grid-area: logo;
     justify-self: start;
-    align-self: flex-start;
+    align-self: center;
     width: 12rem;
     color: $ff_white;
+
+    @include mobile {
+      width: 11rem;
+    }
   }
 
   .followMe {
+    position: relative;
+    top: -0.5rem;
     margin-top: 1rem;
     grid-area: followMe;
     justify-self: end;
-    align-self: flex-start;
+    align-self: center;
   }
 
   .text {

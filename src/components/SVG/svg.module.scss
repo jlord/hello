@@ -1,18 +1,18 @@
 .tempIMG {
   display: block;
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 .finalImage {
   display: grid;
   place-items: center;
   width: 100%;
-  height: 100%;
+  height: auto;
 
   svg {
     width: 100%;
-    height: 100%;
+    height: auto;
   }
 }
 
