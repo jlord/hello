@@ -2,13 +2,18 @@
 @import '../../styles/mixins.scss';
 @import '../../styles/colors.scss';
 
-$content-height: 35rem;
+$content-radius: 31rem;
+$content-radius-mobile: 21rem;
 $title-height: 6rem;
 $carousel-button-radius: 5rem;
+$carousel-button-radius-mobile: 5rem;
 
 @mixin carousel-area {
   display: grid;
-  grid-template: 'title' #{$title-height} 'content' #{$content-height} / 1fr;
+  grid-template: 'title' #{$title-height} 'content' #{$content-radius} / 1fr;
+  @include mobile {
+    grid-template: 'title' #{$title-height} 'content' #{$content-radius-mobile} / 1fr;
+  }
   gap: 1rem;
 
   .carouselAreaContent {
@@ -39,10 +44,12 @@ $grid-margin-correction: -15rem;
   display: grid;
   grid-template: 'previous current next' max-content / 1fr 2fr 1fr;
   @include notLarge {
-    grid-template: 'previous current next' max-content / max(
-        #{$carousel-button-radius},
-        1fr
-      ) max-content max(#{$carousel-button-radius}, 1fr);
+    grid-template:
+      'previous current next' max-content / max(#{$carousel-button-radius}, 1fr)
+      max-content max(#{$carousel-button-radius}, 1fr);
+  }
+  @include mobile {
+    grid-template: 'previous current next' / #{$carousel-button-radius-mobile} 1fr #{$carousel-button-radius-mobile};
   }
 
   .next {
@@ -97,6 +104,9 @@ $grid-margin-correction: -15rem;
   .musicName {
     @include daggersquare;
     font-size: 3rem;
+    @include mobile {
+      font-size: 2rem;
+    }
     color: $ff_white;
     grid-area: music;
   }
@@ -124,23 +134,33 @@ $grid-margin-correction: -15rem;
 }
 
 .frame {
+  overflow: hidden;
   position: relative;
   display: grid;
   place-items: center;
-  height: $content-height;
-  height: 31rem;
-  width: 31rem;
+  height: $content-radius;
+  width: $content-radius;
+  @include mobile {
+    height: $content-radius-mobile;
+    width: $content-radius-mobile;
+  }
+
+  padding: 1rem 1rem 2rem 1rem;
+  margin-top: -3rem;
 
   .frameBackground {
     position: absolute;
-    height: $content-height;
+    height: $content-radius;
+    @include mobile {
+      height: 100%;
+    }
   }
 
   .cover {
+    // display: none;
     position: relative;
-    top: -0.5rem;
-    height: 21rem;
-    width: 21rem;
+    height: 60%;
+    width: 60%;
     background-position: center;
     background-size: contain;
 
@@ -177,11 +197,19 @@ $grid-margin-correction: -15rem;
   all: unset;
   height: $carousel-button-radius;
   width: $carousel-button-radius;
+  @include mobile {
+    height: $carousel-button-radius-mobile;
+    width: $carousel-button-radius-mobile;
+  }
   cursor: pointer;
   transition: transform 0.5s;
   .icon {
     height: $carousel-button-radius;
     width: $carousel-button-radius;
+    @include mobile {
+      height: $carousel-button-radius-mobile;
+      width: $carousel-button-radius-mobile;
+    }
     color: $ff_white;
   }
 

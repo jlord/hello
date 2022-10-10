@@ -31,6 +31,30 @@
   place-items: center;
   gap: 1rem;
   width: max-content;
+  grid-template: 'watchVideo listenOnSouncloud';
+
+  @include mobile {
+    grid-auto-flow: row;
+    grid-template: 'listenOnSouncloud' 'watchVideo';
+  }
+
+  .watchVideo {
+    grid-area: watchVideo;
+    width: 12rem;
+
+    .watchVideoContent {
+      display: grid;
+      grid-auto-flow: column;
+      place-items: center;
+      gap: 1rem;
+      width: max-content;
+    }
+  }
+
+  .listenOnSouncloud {
+    grid-area: listenOnSouncloud;
+    width: 12rem;
+  }
 }
 
 .icon {
@@ -40,6 +64,4 @@
 
 .buttons {
   margin-top: 2rem;
-  padding: 0.3rem;
-  padding-left: 1rem;
 }

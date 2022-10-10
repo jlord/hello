@@ -2,10 +2,20 @@
 @import '../../styles/colors.scss';
 
 .container {
+  max-width: 100vw;
+  min-height: 100vh;
+  position: relative;
   display: grid;
   justify-items: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  overflow-y: auto;
+
+  .background {
+    position: absolute;
+    z-index: -1000;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
   .intro {
     display: grid;
