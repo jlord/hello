@@ -14,7 +14,9 @@ export function HomePage() {
   const musics = useMusicsQuery()
   return (
     <div className={styles.container}>
-      <img src={link} alt="Background" className={styles.background} />
+      <div className={styles.backgroundContainer}>
+        <img src={link} alt="Background" className={styles.background} />
+      </div>
       <div className={styles.intro}>
         <Introduction />
         <Carousel musics={musics} />
