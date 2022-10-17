@@ -1,0 +1,44 @@
+@import '../../../styles/colors.scss';
+
+@function getTotalSize($negative: false, $base_size: false) {
+  $bigger_side: max(100vw, 100vh);
+  $result: calc(#{$bigger_side} * 3);
+  @if $base_size {
+    @return if($negative, calc(#{$bigger_side} * -1), $bigger_side);
+  } @else {
+    @return if($negative, calc(#{$result} * -1), $result);
+  }
+}
+
+$animation_transformation_start: rotate(-45deg) translateX(100vw)
+  translateY(100vh);
+$animation_transformation_end: rotate(-45deg) translateX(-100vw)
+  translateY(-100vh);
+
+@keyframes diagonalMovement {
+  from {
+    transform: rotate(-45deg) translateY(getTotalSize());
+  }
+  to {
+    transform: rotate(-45deg) translateY(getTotalSize($negative: true));
+  }
+}
+
+.container {
+  position: absolute;
+  display: grid;
+  width: getTotalSize();
+  height: getTotalSize();
+  animation: diagonalMovement var(--animation-duration-block, 3s) forwards ease-out;
+  grid-template: 'light' 1fr 'dark' 2fr;
+
+  .light {
+    grid-area: light;
+    background-color: $ff_grey;
+  }
+
+  .dark {
+    grid-area: dark;
+    background-color: $ff_black;
+  }
+}

@@ -1,3 +1,5 @@
+import type { CSSProperties } from 'react'
+
 export function filterProps<T extends Object, U extends keyof T>(
   props: T,
   filterOut: U[]
@@ -27,13 +29,28 @@ type Options = {
   prioritizeDefaultClasses?: boolean
 }
 
-export function composeProps<T extends { className?: string }, U extends keyof T>(
-  props: T,
-  filterOut: U[],
-  classesToAdd: string[] = [],
-  options?: Options
-) {
+export function composeProps<
+  T extends { className?: string },
+  U extends keyof T
+>(props: T, filterOut: U[], classesToAdd: string[] = [], options?: Options) {
   const htmlProps = filterProps(props, filterOut)
-  setDefaultClasses(htmlProps, classesToAdd, !!options?.prioritizeDefaultClasses)
+  setDefaultClasses(
+    htmlProps,
+    classesToAdd,
+    !!options?.prioritizeDefaultClasses
+  )
   return htmlProps
+}
+
+type CssCustomvar = `--${string}`
+
+export function setCSSInlineStyles(
+  props: { style?: CSSProperties },
+  newProps: CSSProperties & Record<CssCustomvar, string>
+) {
+  const cssProps = { ...(props.style ?? {}) }
+  for (const [prop, value] of Object.entries(newProps)) {
+    ;(cssProps as any)[prop] = value
+  }
+  props.style = cssProps
 }
