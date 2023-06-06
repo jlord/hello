@@ -13,10 +13,9 @@ export function EntryText(props: EntryTextProps) {
   const { soundcloud, watchVideoButtonLink } = useLinks()
   return (
     <div {...htmlProps}>
-      <h1>{"Funkin' it forward"}</h1>
+      <h1>{"Funk Forward"}</h1>
       <p>
-        Just a race car driving yeti with a secret recording studio somewhere
-        for some reason.
+        Dive into the adrenaline-fueled world of GTO90 and his rival, Rival-X, as they phuse the realms of racing and electronic music with their 'Funk Forward' ethos.
       </p>
       <p>Take a look at our new album release</p>
       <div className={[styles.row, styles.buttons].join(' ')}>
