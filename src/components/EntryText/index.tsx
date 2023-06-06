@@ -26,7 +26,7 @@ export function EntryText(props: EntryTextProps) {
           </div>
         </Button>
         <Button href={soundcloud} target="_blank" className={styles.listenOnSouncloud}>
-          Listen on Soundcloud
+          Listen on SoundCloud
         </Button>
       </div>
     </div>
