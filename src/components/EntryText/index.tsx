@@ -15,7 +15,7 @@ export function EntryText(props: EntryTextProps) {
     <div {...htmlProps}>
       <h1>{"Funk Forward"}</h1>
       <p>
-        Dive into the adrenaline-fueled world of GTO90 and his rival, Rival-X, as they phuse the realms of racing and electronic music with their 'Funk Forward' ethos.
+        Plunge headfirst into the heart-pounding saga of GTO90 and Rival-X, intertwining high-octane racing and pulsating electronic music, all powered by the enigmatic 'Funk Forward' movement. Intrigue, rivalry, and rhythmic revolutions await.
       </p>
       <p>Take a look at our new album release</p>
       <div className={[styles.row, styles.buttons].join(' ')}>
