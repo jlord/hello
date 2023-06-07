@@ -17,7 +17,7 @@ export function EntryText(props: EntryTextProps) {
       <p>
         Plunge headfirst into the heart-pounding saga of GTO90 and Rival-X, intertwining high-octane racing and pulsating electronic music, all powered by the enigmatic 'Funk Forward' movement. Intrigue, rivalry, and rhythmic revolutions await.
       </p>
-      <p>Take a look at our new album release</p>
+      <p>Coming Soon!</p>
       <div className={[styles.row, styles.buttons].join(' ')}>
         <Button fill href={watchVideoButtonLink} className={styles.watchVideo}>
           <div className={styles.watchVideoContent}>
