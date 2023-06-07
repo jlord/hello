@@ -5,24 +5,11 @@
   "watchVideoButtonLink": "#currentMusic",
   "musics": [
     {
-      "name": "01. Track 1",
-      "album": "Test Album",
+      "name": "01. Backstrokin'",
+      "album": "Funk Forward",
       "link": "#track1",
-      "toRelease": false,
+      "toRelease": true,
       "video": "fiGuXsvy69E"
-    },
-    {
-      "name": "02. Track 2",
-      "album": "Test Album",
-      "link": "#track2",
-      "toRelease": false,
-      "video": "fiGuXsvy69E"
-    },
-    {
-      "name": "03. Track 3",
-      "album": "Test Album",
-      "link": "#track3",
-      "toRelease": true
     }
   ]
 }
